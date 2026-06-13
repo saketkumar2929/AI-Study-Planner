@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Study Planner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>📚 AI Study Planner</h1>
+
+<div class="input-section">
+
+<input type="text" id="subject" placeholder="Subject Name">
+
+<select id="priority">
+<option value="3">High Priority</option>
+<option value="2">Medium Priority</option>
+<option value="1">Low Priority</option>
+</select>
+
+<input type="number" id="hours" placeholder="Study Hours">
+
+<button onclick="addSubject()">Add Subject</button>
+
+</div>
+
+<h2>Subjects</h2>
+<ul id="subjectList"></ul>
+
+<button class="generate" onclick="generatePlan()">
+Generate Study Plan
+</button>
+
+<div id="plan"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
